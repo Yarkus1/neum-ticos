@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidor de Neumáticos PRO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="/" class="logo"><img src="logo.png" alt="Logo"></a>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar por marca, dimensión...">
+                <button type="button" onclick="searchProducts()">Buscar</button>
+            </div>
+            <div class="user-actions">
+                <a href="#cart" id="cartCounter">Carrito (0)</a>
+                <a href="#login" id="loginBtn">Iniciar Sesión</a>
+                <a href="#logout" id="logoutBtn">Cerrar Sesión</a>
+                <a href="#profile" id="profileBtn">Mi Perfil</a>
+                <a href="#admin" id="adminBtn">Administrar</a>
+                <a href="#contact" id="contactBtn">Contacto</a>
+                <a href="#about" id="aboutBtn">Acerca de Nosotros</a>
+                <a href="#terms" id="termsBtn">Términos y Condiciones</a>
+                <a href="#privacy" id="privacyBtn">Política de Privacidad</a>
+                <a href="#cookies" id="cookiesBtn">Política de Cookies</a>
+                <a href="#support" id="supportBtn">Soporte</a>
+                <a href="#help" id="helpBtn">Ayuda</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner"> /
+        <h1>Bienvenido a Distribuidor de Neumáticos PRO</h1>
+        <p>Tu mejor opción para neumáticos de calidad</p>
+        <button onclick="exploreProducts()">Explorar Productos</button>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section class="product-grid" id="productContainer">
+        <!-- Productos cargados dinámicamente via JS -->
+    </section>
+
+    <!-- Sección de Ofertas -->
+    <section class="offers">
+        <h2>Ofertas Especiales</h2>
+        <div class="offer-grid" id="offerContainer">
+            <!-- Ofertas cargadas dinámicamente via JS -->
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonial-grid" id="testimonialContainer">
+            <!-- Testimonios cargados dinámicamente via JS -->
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact-form">
+        <h2>Contáctanos</h2>
+        <form id="contactForm" onsubmit="handleContact(event)">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Modal de Login -->
+    <div class="modal" id="loginModal">
+        <form id="loginForm" onsubmit="handleLogin(event)">
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Acceder</button>
+            <button type="button" onclick="closeModal('loginModal')">Cerrar</button>
+            
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Distribuidor de Neumáticos PRO. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="#facebook" class="social-icon">Facebook</a>
+            <a href="#twitter" class="social-icon">Twitter</a>
+            <a href="#instagram" class="social-icon">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
